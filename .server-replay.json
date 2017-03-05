@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "replacements": [
+        // For JSONP requests where callback name is randomly generated
+        {
+            "match": {"var": "\\/api\\/v1\\/users"},
+            "replace": {"var": "api/replacement"}
+        },
+        // Proxy only works over httphttp://localhost:8080
+        {"match": "https", "replace": "http"}
+    ]
+}

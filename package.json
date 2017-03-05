@@ -1,0 +1,21 @@
+{
+  "name": "server-replay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:web && npm run start:mocks",
+    "start:web": "lite-server",
+    "start:mocks": "server-replay ./hars/manolo_escobar.har",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "server-replay": "^1.1.0"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^0.17.4",
+    "lite-server": "^2.2.2"
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <button type="button" onclick="fetchInfo()">Get Info from mock</button>
+  </div>
+  <script>
+    function fetchInfo() {
+      console.log('testing');
+      window.fetch('/api')
+      .then((res) => {
+        console.log(res.status);
+      });
+    }
+  </script>
+</body>
+</html>
